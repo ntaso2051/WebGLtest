@@ -26,12 +26,12 @@
       </div>
     </div>
     <div>
-      <input type="button" value="Rotate" onclick="onClick()" />
+      <input type="button" value="Rotate" onclick="Rotate()" />
+      <script>
+        function Rotate() {
+          unityInstance.SendMessage('Cube', 'changeIsRotate');
+        }
+      </script>
     </div>
-    <script>
-      function onClick() {
-        unityInstance.SendMessage('Cube', 'rotate');
-      }
-    </script>
   </body>
 </html>
